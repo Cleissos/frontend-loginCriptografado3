@@ -1,0 +1,197 @@
+:root {
+    --bg-primary: #000;
+    --bg-secondary: #1e1d1d;
+}
+
+.container {
+    height: 100vh;
+}
+
+.header {
+    /* background: var(--bg-primary); */
+    background: var(--bg-secondary);
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    z-index: 999;
+    border-bottom: 2px solid var(--bg-primary);
+}
+
+section {
+    max-width: 1500px;
+    margin: 0 auto;
+    box-shadow: 0 5px 0 rgb(41, 40, 40);
+}
+
+.sectionHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.sectionHeader .logo img {
+    width: 80px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 20px #080808;
+}
+
+.sectionHeader .navBar ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.sectionHeader .navBar ul li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+.sectionHeader .navBar ul li a:hover {
+    border-bottom: 2px solid #ffffff;
+}
+
+.logout .btnLogout {
+    width: 120px;
+    height: 50px;
+    font-size: 1.2rem;
+    background-color: transparent;
+    cursor: pointer;
+    color: rgb(18, 189, 228);
+    border: 2px solid rgb(18, 189, 228);
+    border-radius: 10px;
+    transition: .2s;
+}
+
+.logout .btnLogout:hover {
+    color: rgb(99, 211, 236);
+    border: 2px solid rgb(99, 211, 236);
+}
+
+
+.home {
+    background-image: url("src/components/pages/Home/img/bg-academia.png");
+    background-size: cover;
+    background-position: center;
+    
+}
+
+
+.home::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.942); /* controla o escurecimento aqui */
+    z-index: 0;
+}
+
+.home section {
+    margin-top: 120px;
+    height: 86.7vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.imgHome img{
+    width: 400px;
+    border-radius: 10px;
+    animation: top-bottom 10s linear infinite alternate;
+    box-shadow: 2px 2px 20px var(--bg-secondary);
+}
+
+@keyframes top-bottom {
+    from {
+        transform: translateY(5%);
+    }
+    to {
+        transform: translateY(-5%);
+    }
+}
+
+.info {
+    max-width: 60rem;
+}
+
+.info p {
+    position: relative;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+    color: #ffffff;
+    z-index: 1;
+    text-align: justify;
+}
+
+.about {
+    padding: 4rem 0;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    color: green;
+}
+
+.about .imgAbout {
+     display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about .imgAbout img {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 5px black;
+    transition: .3s;
+}
+
+.about .imgAbout img:hover {
+    transform: scale(1.1);
+}
+
+.service {
+    padding: 4rem 0;
+}
+
+.serviceCard {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    text-align: justify;
+}
+
+.serviceCard p {
+    color: #ffffff;
+    line-height: 2.5rem;
+}
+
+.serviceCard img {
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 5px black;
+}
+
+.address {
+    display: flex;
+    padding: 4rem 0;
+    flex-direction: column;
+    align-items: center;
+}
+
+.frame {
+     box-shadow: 10px 10px 10px 5px black;
+}
+
+.footer .assinatura {
+    text-align: center;
+    padding: 3rem 0;
+    color: #ffffff;
+}
+
+.footer .assinatura span {
+    margin-left: 1.5rem;
+}

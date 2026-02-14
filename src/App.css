@@ -1,0 +1,21 @@
+:root {
+    --bg-secondary: #1e1d1d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: "Oswald", sans-serif; */
+  font-family: "Poppins", sans-serif;
+  letter-spacing: .2rem;
+}
+
+body {
+  background: var(--bg-secondary);
+}
+
+/* Chrome, Edge, Safari */
+::-webkit-scrollbar {
+    display: none;
+}
